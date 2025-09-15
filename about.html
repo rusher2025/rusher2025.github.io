@@ -6,86 +6,74 @@
     <title>About Us | EuroRomance</title>
     <link rel="stylesheet" href="css/styles.css">
     <style>
-        .about-container {
-            max-width: 1200px;
-            margin: 2rem auto;
-            padding: 0 2rem;
-        }
-        .about-header {
-            text-align: center;
-            margin-bottom: 3rem;
-        }
-        .about-header h1 {
-            color: var(--primary-color);
-            font-size: 2.5rem;
-            margin-bottom: 1rem;
+        .about-section {
+            padding: 120px 20px 60px;
+            max-width: 1000px;
+            margin: 0 auto;
         }
         .about-content {
-            display: grid;
-            grid-template-columns: 1fr;
-            gap: 3rem;
-        }
-        @media (min-width: 768px) {
-            .about-content {
-                grid-template-columns: 1fr 1fr;
-            }
-        }
-        .about-text {
-            background: white;
-            padding: 2rem;
-            border-radius: 8px;
+            background-color: var(--bg-white);
+            border-radius: 12px;
+            padding: 40px;
             box-shadow: var(--card-shadow);
         }
-        .about-text h2 {
+        .about-content h2 {
             color: var(--primary-color);
-            margin-bottom: 1rem;
+            margin-bottom: 25px;
+            font-size: 2.2rem;
         }
-        .about-text p {
-            margin-bottom: 1rem;
-            line-height: 1.6;
+        .about-content p {
+            margin-bottom: 20px;
+            line-height: 1.8;
         }
-        .team-section {
+        .mission-vision {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 30px;
+            margin: 40px 0;
+        }
+        .mission, .vision {
+            background-color: #f8f9fa;
+            padding: 30px;
+            border-radius: 8px;
+        }
+        .mission h3, .vision h3 {
+            color: var(--primary-color);
+            margin-bottom: 15px;
+            font-size: 1.5rem;
+        }
+        .team {
+            margin-top: 40px;
+        }
+        .team h3 {
+            color: var(--primary-color);
+            margin-bottom: 25px;
+            font-size: 1.8rem;
             text-align: center;
-            margin-top: 3rem;
         }
-        .team-section h2 {
-            color: var(--primary-color);
-            margin-bottom: 2rem;
-        }
-        .team-grid {
+        .team-members {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-            gap: 2rem;
-            justify-items: center;
+            gap: 30px;
         }
         .team-member {
             text-align: center;
+            padding: 20px;
         }
         .team-member img {
-            width: 150px;
-            height: 150px;
+            width: 120px;
+            height: 120px;
             border-radius: 50%;
             object-fit: cover;
-            margin-bottom: 1rem;
-            border: 3px solid var(--primary-color);
+            margin-bottom: 15px;
         }
-        .team-member h3 {
-            color: var(--primary-color);
-            margin-bottom: 0.5rem;
+        .team-member h4 {
+            margin-bottom: 5px;
+            color: var(--text-dark);
         }
-        .mission-vision {
-            background: white;
-            padding: 2rem;
-            border-radius: 8px;
-            box-shadow: var(--card-shadow);
-        }
-        .mission-vision h2 {
-            color: var(--primary-color);
-            margin-bottom: 1rem;
-        }
-        .mission-vision p {
-            margin-bottom: 1rem;
-            line-height: 1.6;
+        .team-member p {
+            color: var(--text-light);
+            font-size: 0.9rem;
         }
     </style>
 </head>
@@ -103,86 +91,56 @@
         </div>
     </nav>
 
-    <!-- Ad Banner -->
-    <div class="ad-banner">
-        <div class="ad-container">
-            <h3>💖 Premium Dating Services 💖</h3>
-            <p>Want professional dating advice? Our partners offer one-on-one coaching to help you find true love!</p>
-            <a href="#" class="ad-button">Learn More</a>
-        </div>
-    </div>
-
-    <!-- About Us Content -->
-    <div class="about-container">
-        <div class="about-header">
-            <h1>About EuroRomance</h1>
-            <p>Your guide to dating and romance across Europe</p>
-        </div>
-
+    <!-- About Section -->
+    <section class="about-section">
         <div class="about-content">
-            <div class="about-text">
-                <h2>Our Story</h2>
-                <p>EuroRomance was founded in 2020 with a simple mission: to help people navigate the exciting world of European dating and relationships.</p>
-                <p>We noticed a lack of comprehensive, culturally-sensitive resources for those interested in dating across Europe's diverse countries and cultures. Our team of relationship experts and cultural consultants came together to create a platform that celebrates the unique dating traditions found across the continent.</p>
-                <p>Whether you're looking for tips on dating in Paris, understanding Italian romance, or exploring the modern dating scene in Berlin, we've got you covered.</p>
-            </div>
-
+            <h2>About EuroRomance</h2>
+            <p>Welcome to EuroRomance, your ultimate guide to dating and romance across Europe. Our mission is to help people navigate the diverse dating cultures of Europe, providing valuable insights, tips, and advice for successful relationships.</p>
+            
+            <p>Founded in 2024, EuroRomance was born from a passion for connecting people and celebrating the rich diversity of European cultures. We believe that understanding cultural differences is key to building meaningful connections in today's globalized world.</p>
+            
             <div class="mission-vision">
-                <h2>Our Mission & Vision</h2>
-                <p><strong>Mission:</strong> To provide accurate, culturally-aware dating advice that helps people build meaningful connections across Europe.</p>
-                <p><strong>Vision:</strong> To become the most trusted resource for cross-cultural dating in Europe, fostering understanding and connection between people of different backgrounds.</p>
-                <p><strong>Values:</strong></p>
-                <ul>
-                    <li>Cultural sensitivity and respect</li>
-                    <li>Authenticity and honesty</li>
-                    <li>Inclusivity and diversity</li>
-                    <li>Empowerment through knowledge</li>
-                </ul>
+                <div class="mission">
+                    <h3>Our Mission</h3>
+                    <p>To empower individuals with the knowledge and confidence to navigate the world of dating, fostering meaningful connections across cultural boundaries.</p>
+                </div>
+                <div class="vision">
+                    <h3>Our Vision</h3>
+                    <p>To become the leading resource for cross-cultural dating advice, helping people from all backgrounds find love and build lasting relationships.</p>
+                </div>
             </div>
-        </div>
-
-        <!-- Team Section -->
-        <div class="team-section">
-            <h2>Meet Our Team</h2>
-            <div class="team-grid">
-                <!-- Team Member 1 -->
-                <div class="team-member">
-                    <img src="assets/images/team-sarah.jpg" alt="Sarah Johnson" onerror="this.src='data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%22150%22%20height%3D%22150%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%20150%20150%22%20preserveAspectRatio%3D%22none%22%3E%3Cdefs%3E%3Cstyle%20type%3D%22text%2Fcss%22%3E%23holder_1678539571%20text%20%7B%20fill%3A%23999%3Bfont-weight%3Anormal%3Bfont-family%3AHelvetica%2C%20monospace%3Bfont-size%3A10pt%20%7D%20%3C%2Fstyle%3E%3C%2Fdefs%3E%3Cg%20id%3D%22holder_1678539571%22%3E%3Crect%20width%3D%22150%22%20height%3D%22150%22%20fill%3D%22%23eee%22%20rx%3D%2275%22%3E%3C%2Frect%3E%3Cg%3E%3Ctext%20x%3D%2225%22%20y%3D%2280%22%3ESarah J.%3C%2Ftext%3E%3C%2Fg%3E%3C%2Fg%3E%3C%2Fsvg%3E'">
-                    <h3>Sarah Johnson</h3>
-                    <p>Founder & Editor-in-Chief</p>
-                </div>
-
-                <!-- Team Member 2 -->
-                <div class="team-member">
-                    <img src="assets/images/team-marcus.jpg" alt="Marcus Rossi" onerror="this.src='data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%22150%22%20height%3D%22150%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%20150%20150%22%20preserveAspectRatio%3D%22none%22%3E%3Cdefs%3E%3Cstyle%20type%3D%22text%2Fcss%22%3E%23holder_1678539571%20text%20%7B%20fill%3A%23999%3Bfont-weight%3Anormal%3Bfont-family%3AHelvetica%2C%20monospace%3Bfont-size%3A10pt%20%7D%20%3C%2Fstyle%3E%3C%2Fdefs%3E%3Cg%20id%3D%22holder_1678539571%22%3E%3Crect%20width%3D%22150%22%20height%3D%22150%22%20fill%3D%22%23eee%22%20rx%3D%2275%22%3E%3C%2Frect%3E%3Cg%3E%3Ctext%20x%3D%2225%22%20y%3D%2280%22%3EMarcus R.%3C%2Ftext%3E%3C%2Fg%3E%3C%2Fg%3E%3C%2Fsvg%3E'">
-                    <h3>Marcus Rossi</h3>
-                    <p>Cultural Consultant</p>
-                </div>
-
-                <!-- Team Member 3 -->
-                <div class="team-member">
-                    <img src="assets/images/team-anna.jpg" alt="Anna Schmidt" onerror="this.src='data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%22150%22%20height%3D%22150%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%20150%20150%22%20preserveAspectRatio%3D%22none%22%3E%3Cdefs%3E%3Cstyle%20type%3D%22text%2Fcss%22%3E%23holder_1678539571%20text%20%7B%20fill%3A%23999%3Bfont-weight%3Anormal%3Bfont-family%3AHelvetica%2C%20monospace%3Bfont-size%3A10pt%20%7D%20%3C%2Fstyle%3E%3C%2Fdefs%3E%3Cg%20id%3D%22holder_1678539571%22%3E%3Crect%20width%3D%22150%22%20height%3D%22150%22%20fill%3D%22%23eee%22%20rx%3D%2275%22%3E%3C%2Frect%3E%3Cg%3E%3Ctext%20x%3D%2225%22%20y%3D%2280%22%3EAnna S.%3C%2Ftext%3E%3C%2Fg%3E%3C%2Fg%3E%3C%2Fsvg%3E'">
-                    <h3>Anna Schmidt</h3>
-                    <p>Relationship Expert</p>
-                </div>
-
-                <!-- Team Member 4 -->
-                <div class="team-member">
-                    <img src="assets/images/team-juan.jpg" alt="Juan Martinez" onerror="this.src='data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%22150%22%20height%3D%22150%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%20150%20150%22%20preserveAspectRatio%3D%22none%22%3E%3Cdefs%3E%3Cstyle%20type%3D%22text%2Fcss%22%3E%23holder_1678539571%20text%20%7B%20fill%3A%23999%3Bfont-weight%3Anormal%3Bfont-family%3AHelvetica%2C%20monospace%3Bfont-size%3A10pt%20%7D%20%3C%2Fstyle%3E%3C%2Fdefs%3E%3Cg%20id%3D%22holder_1678539571%22%3E%3Crect%20width%3D%22150%22%20height%3D%22150%22%20fill%3D%22%23eee%22%20rx%3D%2275%22%3E%3C%2Frect%3E%3Cg%3E%3Ctext%20x%3D%2225%22%20y%3D%2280%22%3EJuan M.%3C%2Ftext%3E%3C%2Fg%3E%3C%2Fg%3E%3C%2Fsvg%3E'">
-                    <h3>Juan Martinez</h3>
-                    <p>Travel & Dating Writer</p>
+            
+            <p>At EuroRomance, we're committed to providing high-quality content that is both informative and engaging. Our team of experts brings diverse perspectives and experiences, ensuring that our advice is well-rounded and applicable to various situations.</p>
+            
+            <p>Whether you're looking for advice on dating in a specific European country, tips for cross-cultural relationships, or general dating guidance, we're here to help you on your journey to finding love.</p>
+            
+            <div class="team">
+                <h3>Our Team</h3>
+                <div class="team-members">
+                    <div class="team-member">
+                        <img src="https://picsum.photos/id/1027/120/120" alt="Sarah Johnson">
+                        <h4>Sarah Johnson</h4>
+                        <p>Founder & Editor-in-Chief</p>
+                    </div>
+                    <div class="team-member">
+                        <img src="https://picsum.photos/id/1012/120/120" alt="Marco Rossi">
+                        <h4>Marco Rossi</h4>
+                        <p>Relationship Expert</p>
+                    </div>
+                    <div class="team-member">
+                        <img src="https://picsum.photos/id/1000/120/120" alt="Emma Wilson">
+                        <h4>Emma Wilson</h4>
+                        <p>Cultural Advisor</p>
+                    </div>
+                    <div class="team-member">
+                        <img src="https://picsum.photos/id/1074/120/120" alt="Lucas Müller">
+                        <h4>Lucas Müller</h4>
+                        <p>Content Strategist</p>
+                    </div>
                 </div>
             </div>
         </div>
-
-        <!-- Contact Info -->
-        <div class="about-text" style="margin-top: 3rem; text-align: center;">
-            <h2>Get in Touch</h2>
-            <p>Have questions or suggestions? We'd love to hear from you!</p>
-            <p>Email: contact@euroromance.com</p>
-            <p>Follow us on social media for the latest dating tips and updates!</p>
-        </div>
-    </div>
+    </section>
 
     <!-- Footer -->
     <footer class="main-footer">

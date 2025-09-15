@@ -6,54 +6,41 @@
     <title>Dating Tips | EuroRomance</title>
     <link rel="stylesheet" href="css/styles.css">
     <style>
-        .tips-container {
+        .tips-section {
+            padding: 120px 20px 60px;
             max-width: 1200px;
-            margin: 2rem auto;
-            padding: 0 2rem;
-        }
-        .tips-header {
-            text-align: center;
-            margin-bottom: 3rem;
-        }
-        .tips-header h1 {
-            color: var(--primary-color);
-            font-size: 2.5rem;
-            margin-bottom: 1rem;
+            margin: 0 auto;
         }
         .tips-grid {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
-            gap: 2rem;
+            grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+            gap: 30px;
+            margin-top: 40px;
         }
         .tip-card {
-            background: white;
-            border-radius: 8px;
+            background-color: var(--bg-white);
+            border-radius: 12px;
             overflow: hidden;
             box-shadow: var(--card-shadow);
-            transition: transform 0.3s ease;
+            transition: var(--transition);
+            padding: 30px;
         }
         .tip-card:hover {
             transform: translateY(-5px);
-            box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.12);
         }
-        .tip-card img {
-            width: 100%;
-            height: 200px;
-            object-fit: cover;
-        }
-        .tip-content {
-            padding: 1.5rem;
-        }
-        .tip-content h2 {
+        .tip-card h3 {
             color: var(--primary-color);
-            margin-bottom: 1rem;
+            margin-bottom: 15px;
+            font-size: 1.5rem;
         }
-        .tip-content ul {
-            margin-left: 1.5rem;
-            margin-bottom: 1.5rem;
+        .tip-card ul {
+            padding-left: 20px;
+            margin-bottom: 15px;
         }
-        .tip-content li {
-            margin-bottom: 0.5rem;
+        .tip-card li {
+            margin-bottom: 10px;
+            line-height: 1.6;
         }
     </style>
 </head>
@@ -71,112 +58,104 @@
         </div>
     </nav>
 
-
-    <!-- Dating Tips Content -->
-    <div class="tips-container">
-        <div class="tips-header">
-            <h1>Expert Dating Tips</h1>
-            <p>Proven strategies and advice to enhance your dating experience across Europe</p>
-        </div>
-
-        <div class="tips-grid">
-            <!-- Tip Card 1 -->
-            <div class="tip-card">
-                <img src="assets/images/tips-first-date.jpg" alt="First Date Tips" onerror="this.src='data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%22600%22%20height%3D%22400%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%20600%20400%22%20preserveAspectRatio%3D%22none%22%3E%3Cdefs%3E%3Cstyle%20type%3D%22text%2Fcss%22%3E%23holder_1678539571%20text%20%7B%20fill%3A%23999%3Bfont-weight%3Anormal%3Bfont-family%3AHelvetica%2C%20monospace%3Bfont-size%3A30pt%20%7D%20%3C%2Fstyle%3E%3C%2Fdefs%3E%3Cg%20id%3D%22holder_1678539571%22%3E%3Crect%20width%3D%22600%22%20height%3D%22400%22%20fill%3D%22%23eee%22%3E%3C%2Frect%3E%3Cg%3E%3Ctext%20x%3D%22180%22%20y%3D%22218%22%3EFirst Date Tips%3C%2Ftext%3E%3C%2Fg%3E%3C%2Fg%3E%3C%2Fsvg%3E'">
-                <div class="tip-content">
-                    <h2>First Date Essentials</h2>
-                    <ul>
-                        <li>Choose a comfortable, neutral location for your first meeting</li>
-                        <li>Plan a simple activity to reduce pressure (coffee, lunch, or a walk)</li>
-                        <li>Research common interests to have conversation starters ready</li>
-                        <li>Listen more than you talk and ask open-ended questions</li>
-                        <li>Maintain good posture and eye contact to show confidence</li>
-                        <li>Follow up with a thank-you message within 24 hours</li>
-                    </ul>
-                </div>
-            </div>
-
-            <!-- Tip Card 2 -->
-            <div class="tip-card">
-                <img src="assets/images/tips-communication.jpg" alt="Communication Tips" onerror="this.src='data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%22600%22%20height%3D%22400%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%20600%20400%22%20preserveAspectRatio%3D%22none%22%3E%3Cdefs%3E%3Cstyle%20type%3D%22text%2Fcss%22%3E%23holder_1678539571%20text%20%7B%20fill%3A%23999%3Bfont-weight%3Anormal%3Bfont-family%3AHelvetica%2C%20monospace%3Bfont-size%3A30pt%20%7D%20%3C%2Fstyle%3E%3C%2Fdefs%3E%3Cg%20id%3D%22holder_1678539571%22%3E%3Crect%20width%3D%22600%22%20height%3D%22400%22%20fill%3D%22%23eee%22%3E%3C%2Frect%3E%3Cg%3E%3Ctext%20x%3D%22160%22%20y%3D%22218%22%3ECommunication Tips%3C%2Ftext%3E%3C%2Fg%3E%3C%2Fg%3E%3C%2Fsvg%3E'">
-                <div class="tip-content">
-                    <h2>Effective Communication</h2>
-                    <ul>
-                        <li>Be honest and authentic from the beginning</li>
-                        <li>Express your feelings clearly but respectfully</li>
-                        <li>Avoid texting too much before meeting in person</li>
-                        <li>Learn the difference between European texting styles</li>
-                        <li>Be mindful of cultural differences in communication</li>
-                        <li>Practice active listening and empathy</li>
-                    </ul>
-                </div>
-            </div>
-
-            <!-- Tip Card 3 -->
-            <div class="tip-card">
-                <img src="assets/images/tips-cultural.jpg" alt="Cultural Differences" onerror="this.src='data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%22600%22%20height%3D%22400%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%20600%20400%22%20preserveAspectRatio%3D%22none%22%3E%3Cdefs%3E%3Cstyle%20type%3D%22text%2Fcss%22%3E%23holder_1678539571%20text%20%7B%20fill%3A%23999%3Bfont-weight%3Anormal%3Bfont-family%3AHelvetica%2C%20monospace%3Bfont-size%3A30pt%20%7D%20%3C%2Fstyle%3E%3C%2Fdefs%3E%3Cg%20id%3D%22holder_1678539571%22%3E%3Crect%20width%3D%22600%22%20height%3D%22400%22%20fill%3D%22%23eee%22%3E%3C%2Frect%3E%3Cg%3E%3Ctext%20x%3D%22150%22%20y%3D%22218%22%3ECultural Differences%3C%2Ftext%3E%3C%2Fg%3E%3C%2Fg%3E%3C%2Fsvg%3E'">
-                <div class="tip-content">
-                    <h2>Navigating Cultural Differences</h2>
-                    <ul>
-                        <li>Research the dating customs of different European countries</li>
-                        <li>Understand personal space preferences across cultures</li>
-                        <li>Learn about common greeting practices (handshakes, cheek kisses)</li>
-                        <li>Be aware of punctuality expectations in different regions</li>
-                        <li>Ask questions about their culture with genuine interest</li>
-                        <li>Respect dietary restrictions and preferences</li>
-                    </ul>
-                </div>
-            </div>
-
-            <!-- Tip Card 4 -->
-            <div class="tip-card">
-                <img src="assets/images/tips-online-dating.jpg" alt="Online Dating" onerror="this.src='data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%22600%22%20height%3D%22400%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%20600%20400%22%20preserveAspectRatio%3D%22none%22%3E%3Cdefs%3E%3Cstyle%20type%3D%22text%2Fcss%22%3E%23holder_1678539571%20text%20%7B%20fill%3A%23999%3Bfont-weight%3Anormal%3Bfont-family%3AHelvetica%2C%20monospace%3Bfont-size%3A30pt%20%7D%20%3C%2Fstyle%3E%3C%2Fdefs%3E%3Cg%20id%3D%22holder_1678539571%22%3E%3Crect%20width%3D%22600%22%20height%3D%22400%22%20fill%3D%22%23eee%22%3E%3C%2Frect%3E%3Cg%3E%3Ctext%20x%3D%22170%22%20y%3D%22218%22%3EOnline Dating Tips%3C%2Ftext%3E%3C%2Fg%3E%3C%2Fg%3E%3C%2Fsvg%3E'">
-                <div class="tip-content">
-                    <h2>Online Dating Success</h2>
-                    <ul>
-                        <li>Choose dating apps popular in your target European country</li>
-                        <li>Create a compelling profile with clear, recent photos</li>
-                        <li>Write an engaging bio that highlights your personality</li>
-                        <li>Personalize your messages instead of using generic openers</li>
-                        <li>Move conversations offline within 1-2 weeks</li>
-                        <li>Prioritize safety when meeting someone new</li>
-                    </ul>
-                </div>
-            </div>
-
-            <!-- Tip Card 5 -->
-            <div class="tip-card">
-                <img src="assets/images/tips-romantic-gestures.jpg" alt="Romantic Gestures" onerror="this.src='data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%22600%22%20height%3D%22400%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%20600%20400%22%20preserveAspectRatio%3D%22none%22%3E%3Cdefs%3E%3Cstyle%20type%3D%22text%2Fcss%22%3E%23holder_1678539571%20text%20%7B%20fill%3A%23999%3Bfont-weight%3Anormal%3Bfont-family%3AHelvetica%2C%20monospace%3Bfont-size%3A30pt%20%7D%20%3C%2Fstyle%3E%3C%2Fdefs%3E%3Cg%20id%3D%22holder_1678539571%22%3E%3Crect%20width%3D%22600%22%20height%3D%22400%22%20fill%3D%22%23eee%22%3E%3C%2Frect%3E%3Cg%3E%3Ctext%20x%3D%22140%22%20y%3D%22218%22%3ERomantic Gestures%3C%2Ftext%3E%3C%2Fg%3E%3C%2Fg%3E%3C%2Fsvg%3E'">
-                <div class="tip-content">
-                    <h2>Romantic Gestures Across Europe</h2>
-                    <ul>
-                        <li>Learn about flower-giving traditions in different countries</li>
-                        <li>Discover local love languages and express affection accordingly</li>
-                        <li>Plan cultural date experiences unique to the region</li>
-                        <li>Understand the role of chivalry in different European cultures</li>
-                        <li>Find out which romantic gestures are considered appropriate</li>
-                        <li>Create personalized experiences based on their interests</li>
-                    </ul>
-                </div>
-            </div>
-
-            <!-- Tip Card 6 -->
-            <div class="tip-card">
-                <img src="assets/images/tips-long-term.jpg" alt="Long Term Relationships" onerror="this.src='data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%22600%22%20height%3D%22400%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%20600%20400%22%20preserveAspectRatio%3D%22none%22%3E%3Cdefs%3E%3Cstyle%20type%3D%22text%2Fcss%22%3E%23holder_1678539571%20text%20%7B%20fill%3A%23999%3Bfont-weight%3Anormal%3Bfont-family%3AHelvetica%2C%20monospace%3Bfont-size%3A30pt%20%7D%20%3C%2Fstyle%3E%3C%2Fdefs%3E%3Cg%20id%3D%22holder_1678539571%22%3E%3Crect%20width%3D%22600%22%20height%3D%22400%22%20fill%3D%22%23eee%22%3E%3C%2Frect%3E%3Cg%3E%3Ctext%20x%3D%22130%22%20y%3D%22218%22%3ELong-Term Relationships%3C%2Ftext%3E%3C%2Fg%3E%3C%2Fg%3E%3C%2Fsvg%3E'">
-                <div class="tip-content">
-                    <h2>Building Long-Term Connections</h2>
-                    <ul>
-                        <li>Understand relationship progression norms in different cultures</li>
-                        <li>Communicate your expectations clearly and respectfully</li>
-                        <li>Embrace cultural differences as learning opportunities</li>
-                        <li>Plan future trips together to explore new destinations</li>
-                        <li>Balance independence with togetherness</li>
-                        <li>Celebrate important milestones and cultural holidays</li>
-                    </ul>
-                </div>
-            </div>
+    <!-- Ad Banner -->
+    <div class="ad-banner">
+        <div class="ad-container">
+            <h3>💖 Premium Dating Services 💖</h3>
+            <p>Want professional dating advice? Our partners offer one-on-one coaching to help you find true love!</p>
+            <a href="#" class="ad-button">Learn More</a>
         </div>
     </div>
+
+    <!-- Dating Tips Section -->
+    <section class="tips-section">
+        <h2 class="section-title">Essential Dating Tips</h2>
+        <div class="tips-grid">
+            <!-- Tip 1 -->
+            <div class="tip-card">
+                <h3>First Date Essentials</h3>
+                <ul>
+                    <li>Choose a comfortable, public location for your first meeting</li>
+                    <li>Plan an activity that allows conversation, like coffee or a walk</li>
+                    <li>Be present and avoid checking your phone</li>
+                    <li>Ask open-ended questions to learn about your date</li>
+                    <li>Listen actively and show genuine interest</li>
+                    <li>Keep the conversation balanced - don't dominate or stay silent</li>
+                    <li>End the date gracefully, either with a plan for a second date or a polite goodbye</li>
+                </ul>
+            </div>
+
+            <!-- Tip 2 -->
+            <div class="tip-card">
+                <h3>Effective Communication</h3>
+                <ul>
+                    <li>Be honest and authentic from the start</li>
+                    <li>Express your feelings clearly and respectfully</li>
+                    <li>Use "I" statements to avoid sounding accusatory</li>
+                    <li>Don't make assumptions - clarify if you're unsure</li>
+                    <li>Give constructive feedback rather than criticism</li>
+                    <li>Practice active listening skills</li>
+                    <li>Balance digital and in-person communication</li>
+                </ul>
+            </div>
+
+            <!-- Tip 3 -->
+            <div class="tip-card">
+                <h3>Cultural Differences</h3>
+                <ul>
+                    <li>Research the cultural background of your date</li>
+                    <li>Be open-minded about different customs and traditions</li>
+                    <li>Avoid stereotypes and generalizations</li>
+                    <li>Ask questions to learn about their cultural perspective</li>
+                    <li>Be respectful of dietary restrictions and preferences</li>
+                    <li>Understand that communication styles vary across cultures</li>
+                    <li>Find common ground while appreciating differences</li>
+                </ul>
+            </div>
+
+            <!-- Tip 4 -->
+            <div class="tip-card">
+                <h3>Online Dating Success</h3>
+                <ul>
+                    <li>Create an authentic profile that reflects your personality</li>
+                    <li>Use high-quality, recent photos</li>
+                    <li>Be specific about your interests and what you're looking for</li>
+                    <li>Don't wait too long to move from online to in-person</li>
+                    <li>Trust your instincts - if something feels off, proceed with caution</li>
+                    <li>Take safety precautions for first meetings</li>
+                    <li>Don't get discouraged by rejections - keep trying</li>
+                </ul>
+            </div>
+
+            <!-- Tip 5 -->
+            <div class="tip-card">
+                <h3>Romantic Gestures</h3>
+                <ul>
+                    <li>Personalize gestures based on your partner's interests</li>
+                    <li>Small, thoughtful acts often mean more than grand gestures</li>
+                    <li>Write a heartfelt note or letter</li>
+                    <li>Plan a surprise date that reflects their preferences</li>
+                    <li>Remember important dates and details about their life</li>
+                    <li>Show affection in ways that make them comfortable</li>
+                    <li>Express gratitude and appreciation regularly</li>
+                </ul>
+            </div>
+
+            <!-- Tip 6 -->
+            <div class="tip-card">
+                <h3>Building a Lasting Relationship</h3>
+                <ul>
+                    <li>Establish trust through consistency and reliability</li>
+                    <li>Nurture emotional intimacy through open communication</li>
+                    <li>Maintain individual identities and hobbies</li>
+                    <li>Work together to solve problems rather than against each other</li>
+                    <li>Show appreciation and gratitude daily</li>
+                    <li>Make time for regular date nights</li>
+                    <li>Support each other's goals and dreams</li>
+                </ul>
+            </div>
+        </div>
+    </section>
 
     <!-- Footer -->
     <footer class="main-footer">
